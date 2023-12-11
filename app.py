@@ -1,26 +1,3 @@
-# from flask import Flask, render_template, request
-# from flask_talisman import Talisman
-
-# app = Flask(__name__)
-
-# # Set the environment to 'development' for local development
-# app.config['ENV'] = 'development'
-
-# # Disable Flask-Talisman for local development
-# if app.config['ENV'] != 'development':
-#     Talisman(app)
-
-# @app.route("/", methods=["GET", "POST"])
-# def home():
-#     if request.method == "POST":
-#         user_input = request.form.get("user_input", "")
-#         # Add your input validation and processing here
-#         return f"Received input: {user_input}"
-#     return render_template("dashboard.html")
-
-# if __name__ == "__main__":
-#     app.run(debug=True)
-
 from flask import Flask, render_template, request
 from flask_talisman import Talisman
 from patient_data_encryption import encrypt_data, decrypt_data
