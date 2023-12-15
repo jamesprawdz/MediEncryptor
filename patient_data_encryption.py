@@ -1,16 +1,17 @@
 from cryptography.fernet import Fernet
-from encryption_config import ENCRYPTION_KEY  # Import the encryption key
+import os
 
+# Load the encryption key from environment variable
+ENCRYPTION_KEY = os.environ.get("ENCRYPTION_KEY")
 
 # Encrypt data using AES
-def encrypt_data(key, plaintext):
-    fernet = Fernet(key)
+def encrypt_data(plaintext):
+    fernet = Fernet(ENCRYPTION_KEY)
     encrypted_data = fernet.encrypt(plaintext.encode())
     return encrypted_data
 
-
 # Decrypt data using AES
-def decrypt_data(key, ciphertext):
-    fernet = Fernet(key)
+def decrypt_data(ciphertext):
+    fernet = Fernet(ENCRYPTION_KEY)
     decrypted_data = fernet.decrypt(ciphertext).decode()
     return decrypted_data
