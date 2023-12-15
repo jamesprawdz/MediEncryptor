@@ -4,13 +4,14 @@
     <title>Encryption Dashboard</title>
   </head>
   <body>
-    <h1>Welcome to the Encryption Dashboard</h1>
+    <h1>Welcome to the Encryption Dashboard!</h1>
     <form method="post">
       <input type="text" name="user_input" placeholder="Enter some data" />
       <button type="submit">Submit</button>
     </form>
 
     <p>Encryption Status: {{ encryption_status }}</p>
+    <p>Encrypted Data: {{ encrypted_data }}</p>
     <p>Decrypted Data: {{ decrypted_data }}</p>
   </body>
 </html>
