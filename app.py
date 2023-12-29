@@ -57,7 +57,10 @@ def home():
 
 
 if __name__ == "__main__":
-    print("Internal Flask Debug:", app.debug)
+    # print("Before running app")
+    # print("FLASK_ENV:", os.environ.get("FLASK_ENV"))
+    # print("app.debug:", app.debug)
+    # print("app.config['DEBUG']:", app.config["DEBUG"])
     app.run(debug=True)
 
 
