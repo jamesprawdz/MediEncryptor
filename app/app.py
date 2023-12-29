@@ -8,7 +8,7 @@ from flask_talisman import Talisman
 from patient_data_encryption import encrypt_data, decrypt_data
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="../templates")
 app.config["DEBUG"] = True
 
 

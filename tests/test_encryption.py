@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import unittest
-from patient_data_encryption import encrypt_data, decrypt_data
+from app.patient_data_encryption import encrypt_data, decrypt_data
 import os
 
 ENCRYPTION_KEY = os.environ.get("ENCRYPTION_KEY")
