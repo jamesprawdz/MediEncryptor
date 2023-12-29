@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Encryption Dashboard</title>
-  </head>
-  <body>
-    <h1>Welcome to the Encryption Dashboard!</h1>
-    <form method="post">
-      <input type="text" name="user_input" placeholder="Enter some data" />
-      <button type="submit">Submit</button>
-    </form>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Welcome to the Encryption Dashboard!</h1>
+        <form method="post" class="mt-4">
+            <div class="form-group">
+                <input type="text" class="form-control" name="user_input" placeholder="Enter some data" />
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 
-    <p>Encryption Status: {{ encryption_status }}</p>
-    <p>Encrypted Data: {{ encrypted_data }}</p>
-    <p>Decrypted Data: {{ decrypted_data }}</p>
-  </body>
+        <div class="mt-4">
+            <h2>Results:</h2>
+            <p>Encryption Status: {{ encryption_status }}</p>
+            <p>Encrypted Data: <code>{{ encrypted_data }}</code></p>
+            <p>Decrypted Data: {{ decrypted_data }}</p>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and its dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
 </html>

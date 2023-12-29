@@ -1,5 +1,5 @@
 venv/
-encryption_config.py
 __pycache__/
 .DS_Store
 .env
+.flaskenv
