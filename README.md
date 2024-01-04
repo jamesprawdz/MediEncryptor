@@ -1,4 +1,4 @@
-# MediEncryptor Project
+# MediEncryptor
 
 ## Description
 MediEncryptor is a Flask-based web application designed to securely encrypt and decrypt medical data. It's built with Python and uses advanced encryption techniques to ensure data privacy and security.
