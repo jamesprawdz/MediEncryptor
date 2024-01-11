@@ -5,7 +5,7 @@ load_dotenv()
 
 from flask import Flask, render_template, request
 from flask_talisman import Talisman
-from patient_data_encryption import encrypt_data, decrypt_data
+from .patient_data_encryption import encrypt_data, decrypt_data
 import os
 
 app = Flask(__name__, template_folder="../templates")

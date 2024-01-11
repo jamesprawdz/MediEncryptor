@@ -1,6 +1,9 @@
-venv/
-__pycache__/
-.DS_Store
+.venv/
 .env
 .flaskenv
+.DS_Store
+__pycache__/
 commands.txt
+# IDE specific files
+.vscode/
+.idea/
