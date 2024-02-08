@@ -3,6 +3,7 @@
 .flaskenv
 .DS_Store
 __pycache__/
+.pytest_cache
 commands.txt
 # IDE specific files
 .vscode/
